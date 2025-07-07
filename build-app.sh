@@ -1,7 +1,8 @@
 #!/bin/bash
 composer install
-npm run build
+npm ci
 npm install --production
+npm run build
 
 echo "📦 Limpiando caché anterior..."
 php artisan config:clear
